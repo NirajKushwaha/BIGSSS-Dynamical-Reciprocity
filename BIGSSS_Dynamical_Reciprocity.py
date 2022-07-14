@@ -4,6 +4,7 @@ propensity updation rule (as explained in the BIGSSS 2022 summer school presenta
 
 *** Detailed documentation will be provided after the project has been finalized. ***
 *** This beta version of the code is only for reference for the participants of the BIGSSS 2022 summer school on Social Cohension. ***
+*** Note: This is the first draft of the tested code and so it has not been optimized for performance yet. ***
 """
 
 import numpy as np
