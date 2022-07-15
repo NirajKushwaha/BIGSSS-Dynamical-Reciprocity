@@ -6,8 +6,8 @@ propensity updation rule (as explained in the BIGSSS 2022 summer school presenta
 *** This beta version of the code is only for reference for the participants of the BIGSSS 2022 summer school on Social Cohension. ***
 *** Note: This is the first draft of the tested code and so it has not been optimized for performance yet. ***
 
-This code runs parallely on all cpu threads. If you wish to use some specific number of cpu threads then set the 
-cpu_count in the Pool function.
+This code runs parallely on all cpu threads. If you wish to use some specific number of cpu threads then change the 
+"processes" in the Pool function.
 """
 
 import numpy as np
@@ -208,7 +208,7 @@ parameter_ticks = np.arange(0,1+resolution,resolution)
 ##
 
 parameter_pairs = list(product(parameter_ticks,parameter_ticks))
-with Pool() as pool:
+with Pool(processes=None) as pool:
     output = list(pool.map(system_state_loop_wrapper , parameter_pairs))
 
 system_state_matrix = np.zeros((len(parameter_ticks) , len(parameter_ticks))).astype(int)
