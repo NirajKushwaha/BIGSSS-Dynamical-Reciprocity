@@ -1,6 +1,5 @@
 """
-This script can be run to plot a phase space diagram for a system of agents which evolve using our
-propensity updation rule (as explained in the BIGSSS 2022 summer school presentation).
+This script can be run to simulate our agent based model (as explained in the BIGSSS 2022 summer school presentation) and plot a phase space diagram.
 
 *** Detailed documentation will be provided after the project has been finalized. ***
 *** This beta version of the code is only for reference for the participants of the BIGSSS 2022 summer school on Social Cohension. ***
